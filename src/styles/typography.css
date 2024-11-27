@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('../assets/fonts/MarkaziText-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../assets/fonts/Karla-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stili per i titoli */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Markazi Text', serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Min: 2.5rem, Fluid: 5vw, Max: 4.5rem */
+  font-weight: bold;
+}
+
+h2 {
+  font-size: clamp(1.875rem, 4vw, 2.5rem); /* Min: 1.875rem, Fluid: 4vw, Max: 2.5rem */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem); /* Min: 1.5rem, Fluid: 3vw, Max: 2rem */
+  font-weight: bold;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.125rem); /* Min: 1rem, Fluid: 2vw, Max: 1.125rem */
+  margin: 1.5rem 0;
+}

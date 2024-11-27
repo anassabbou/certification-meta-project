@@ -1,0 +1,20 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.logo {
+  height: 3.75rem;
+}
+
+.logo-vertical {
+  width: 7.5rem;
+}
+
+@media (max-width: 48rem) {
+  .logo-container {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,73 @@
+:root {
+  /* Colors */
+  --primary-dark-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-salmon: #ee9972;
+  --secondary-light-salmon: #fbdabb;
+  --highlight-light-gray: #edefee;
+  --highlight-dark-gray: #333333;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+
+    /* Tipography */
+    --font-family-primary: 'Markazi Text', serif;
+    --font-family-secondary: 'Karla', sans-serif;
+
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-title: 48px;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+  /* Border Radius */
+  --border-radius-large: 16px;
+  --border-radius-medium: 8px;
+
+    /* Shadow */
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-strong: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+  /* Layout */
+  --container-max-width: 960px;
+  --container-padding: 20px;
+}
+
+@media (max-width: 1024px) { /* Laptop */
+  :root {
+    --container-max-width: 85%;
+    --container-padding: 18px;
+  }
+}
+
+@media (max-width: 768px) { /* Tablet */
+  :root {
+    --container-max-width: 80%;
+    --container-padding: 15px;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile */
+  :root {
+    --container-max-width: 80%;
+    --container-padding: 10px;
+  }
+}
+
+body {
+  background-color: var(--highlight-light-gray);
+  color: var(--highlight-dark-gray);
+}
+
+
+/*  40px	=  2.5rem
+    60px	=  3.75rem
+    32px	=  2rem
+    24px	=  1.5rem
+    20px	=  1.25rem
+    16px	=  1rem
+    12px	=  0.75rem
+    10px	=  0.625rem
+    200px	=  12.5rem   */

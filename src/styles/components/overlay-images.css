@@ -1,0 +1,41 @@
+.image-overlay {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  overflow: visible;
+}
+
+.image {
+  border-radius: 16px;
+  object-fit: cover;
+  position: absolute;
+  transition: transform 0.5s ease, z-index 0.5s ease;
+}
+
+.image-primary {
+  width: 200px;
+  height: 300px;
+  top: 0;
+  left: 50px;
+  z-index: 2;
+  transform: translate(0, 0);
+}
+
+.image-secondary {
+  width: 200px;
+  height: 300px;
+  top: 80px;
+  left: -20px;
+  z-index: 1;
+  transform: translate(0, 0);
+}
+
+.image-overlay:hover .image-primary {
+  transform: translate(-45px, 80px);
+  z-index: 1;
+}
+
+.image-overlay:hover .image-secondary {
+  transform: translate(50px, -80px);
+  z-index: 2;
+}

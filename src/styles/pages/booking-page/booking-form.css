@@ -1,0 +1,56 @@
+
+.booking-form {
+  display: grid;
+  gap: 1.2rem;
+  max-width: 400px;
+  background-color: var(--basic-white);
+  padding: 2rem;
+  margin: 3rem 0;
+  flex: 1;
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-medium);
+}
+
+.booking-form-title {
+  font-family: "Markazi Text", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-dark-green);
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.booking-form label {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-dark-green);
+}
+
+.booking-form input,
+.booking-form select {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--highlight-light-gray);
+  border-radius: var(--border-radius-small);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: var(--primary-yellow);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-yellow);
+}
+
+.booking-form button {
+  margin-top: 1rem;
+}

@@ -1,0 +1,22 @@
+.chicago {
+  background-color: var(--basic-white);
+  padding: 40px 20px;
+}
+
+.chicago-container {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chicago-text {
+  text-align: left;
+}
+
+.chicago-image-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+}

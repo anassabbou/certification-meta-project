@@ -1,0 +1,18 @@
+.confirmed-booking {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--highlight-light-gray);
+}
+
+.confirmed-booking h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 2.5rem;
+  color: var(--primary-dark-green);
+}
+
+.confirmed-booking p {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: var(--highlight-dark-gray);
+  margin-top: 1rem;
+}

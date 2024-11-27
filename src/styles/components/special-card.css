@@ -1,0 +1,118 @@
+.special-card {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  background-color: var(--basic-white);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.special-card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-medium);
+}
+
+.special-card-image {
+  width: 100%;
+  min-height: 200px;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.special-card-content {
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.special-card-title {
+  color: var(--highlight-dark-gray);
+  margin: 0;
+}
+
+.special-card-price {
+  color: var(--primary-yellow);
+  margin: 0;
+}
+
+.special-card-description {
+  color: var(--highlight-dark-gray);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.animate-icon-button .button-label{
+  background-color: var(--basic-white);
+  padding-right: 8px;
+  z-index: 10;
+}
+
+.animate-icon-button {
+  min-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 0;
+  border: none;
+  border-radius: var(--border-radius-medium);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-dark-green);
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-icon-button .icon-right {
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+  transition: none;
+}
+
+/* Keyframe to exit right */
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(700%);
+  }
+}
+
+/* Keyframe to indent from the left */
+@keyframes slide-in {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Exit icon to the right */
+.animate-icon-button:hover .icon-right {
+  animation: slide-out 0.9s forwards;
+}
+
+/* Indent icon from left */
+.animate-icon-button:not(:hover) .icon-right {
+  animation: slide-in 0.9s forwards;
+}

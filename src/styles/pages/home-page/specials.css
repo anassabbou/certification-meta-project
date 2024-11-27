@@ -1,0 +1,46 @@
+.specials {
+  margin-top: 90px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.specials-items {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px 0;
+}
+
+/* Breakpoint for tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .specials-items {
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+/* Breakpoint for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .specials {
+    margin-top: 0;
+  }
+
+  .specials-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .specials-items {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
